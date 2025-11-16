@@ -258,6 +258,33 @@
                   "path": "firmware/ttgo t display/ORIGINAL/1.0.33-2-g12/bin_jade/jade.bin"
                 }
               ]
+            },
+            {
+              "version": "1.0.36-132-g",
+              "path": "firmware/ttgo t display/ORIGINAL/1.0.36-132-g/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.36-132-g/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.36-132-g/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.36-132-g/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.36-132-g/jade.bin"
+                }
+              ]
             }
           ]
         }
