@@ -41,7 +41,7 @@
       "name": "TTGO T Display",
       "boards": [
         {
-          "name": "v1",
+          "name": "original",
           "supported_firmware": [
             {
               "version": "1.0.31-28-g3",
