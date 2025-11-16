@@ -36,6 +36,232 @@
           ]
         }
       ]
+    },
+    {
+      "name": "TTGO T Display",
+      "boards": [
+        {
+          "name": "v1",
+          "supported_firmware": [
+            {
+              "version": "1.0.31-28-g3",
+              "path": "firmware/ttgo t display/1.0.31-28-g3/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/1.0.31-28-g3/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/1.0.31-28-g3/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/1.0.31-28-g3/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/1.0.31-28-g3/jade.bin"
+                }
+              ]
+            },
+            {
+              "version": "1.0.31-45-gb",
+              "path": "firmware/ttgo t display/1.0.31-45-gb/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/1.0.31-45-gb/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/1.0.31-45-gb/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/1.0.31-45-gb/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/1.0.31-45-gb/jade.bin"
+                }
+              ]
+            },
+            {
+              "version": "1.0.31-57-g1",
+              "path": "firmware/ttgo t display/1.0.31-57-g1/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/1.0.31-57-g1/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/1.0.31-57-g1/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/1.0.31-57-g1/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/1.0.31-57-g1/jade.bin"
+                }
+              ]
+            },
+            {
+              "version": "1.0.31.71-g1",
+              "path": "firmware/ttgo t display/1.0.31.71-g1/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/1.0.31.71-g1/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/1.0.31.71-g1/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/1.0.31.71-g1/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/1.0.31.71-g1/jade.bin"
+                }
+              ]
+            },
+            {
+              "version": "1.0.32-2-gecf",
+              "path": "firmware/ttgo t display/1.0.32-2-gecf/bin_jade/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/1.0.32-2-gecf/bin_jade/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/1.0.32-2-gecf/bin_jade/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/1.0.32-2-gecf/bin_jade/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/1.0.32-2-gecf/bin_jade/jade.bin"
+                }
+              ]
+            },
+            {
+              "version": "1.0.32-24-g5",
+              "path": "firmware/ttgo t display/1.0.32-24-g5/bin_jade/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/1.0.32-24-g5/bin_jade/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/1.0.32-24-g5/bin_jade/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/1.0.32-24-g5/bin_jade/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/1.0.32-24-g5/bin_jade/jade.bin"
+                }
+              ]
+            },
+            {
+              "version": "1.0.32-8-g27",
+              "path": "firmware/ttgo t display/1.0.32-8-g27/bin_jade/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/1.0.32-8-g27/bin_jade/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/1.0.32-8-g27/bin_jade/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/1.0.32-8-g27/bin_jade/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/1.0.32-8-g27/bin_jade/jade.bin"
+                }
+              ]
+            },
+            {
+              "version": "1.0.33-2-g12",
+              "path": "firmware/ttgo t display/1.0.33-2-g12/bin_jade/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/1.0.33-2-g12/bin_jade/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/1.0.33-2-g12/bin_jade/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/1.0.33-2-g12/bin_jade/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/1.0.33-2-g12/bin_jade/jade.bin"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
