@@ -51,7 +51,7 @@
                     "supported_firmware": [
                         {
                             "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-401-v2.10.0.bin"
+                            "path": "firmware/Waveshare S3_NO_LOG/jade.bin"
                         }
                     ]
                 }
