@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ['latin'] })
 const basePath = process.env.NODE_ENV === 'production' ? '/bitaxe-web-flasher' : ''
 
 export const metadata: Metadata = {
-  title: 'Bitaxe Web Flasher',
-  description: 'Flash your Bitaxe directly from the web',
+  title: 'Jade-Diy Web Flasher',
+  description: 'Flash your Jade-Diy directly from the web',
   icons: {
     icon: [
       {
