@@ -11,7 +11,7 @@
       "instructions": "Kullanım"
     },
     "hero": {
-      "title": "Bitaxe Cihazınızı Tarayıcınızdan Formatlayın",
+      "title": "Jade-Diy Cihazınızı Tarayıcınızdan Formatlayın",
       "description": "Cihazını bağla, model ve versiyon seç ve formatlamaya hemen başla. Bilgisayara ek kurulum gerektirmez.",
       "getStarted": "Başlayın",
       "connect": "Bağla",
@@ -31,7 +31,7 @@
       "title": "Öne Çıkan Özellikler",
       "fastFlashing": {
         "title": "Hızlı Formatlama",
-        "description": "Bitaxe cihazınızı saniyeler içinde formatlayın."
+        "description": "Jade-Diy cihazınızı saniyeler içinde formatlayın."
       },
       "webBased": {
         "title": "Tarayıcı Tabanlı",
@@ -39,14 +39,14 @@
       },
       "multipleBoards": {
         "title": "Birden Fazla Versiyon Destekli",
-        "description": "Neredeyse tüm Bitaxe donanım ve yazılım versiyonlarını destekler."
+        "description": "Neredeyse tüm Jade-Diy donanım ve yazılım versiyonlarını destekler."
       }
     },
     "instructions": {
       "title": "Nasıl Kullanılır",
       "steps": {
-        "1": "Bitaxe cihazınızı bilgisayarınıza bağlayın.",
-        "2": "\"Bağla\" butonuna tıklayın ve çıkan menüden Bitaxe cihazınızı seçin.",
+        "1": "Jade-Diy cihazınızı bilgisayarınıza bağlayın.",
+        "2": "\"Bağla\" butonuna tıklayın ve çıkan menüden Jade-Diy cihazınızı seçin.",
         "3": "Cihaz modelini seçin.",
         "4": "Cihaz versiyonunu seçin.",
         "5": "Formatı başlatmak için \"Formatlamaya Başla\" butonuna tıklayın.",

@@ -11,7 +11,7 @@
       "instructions": "Instrucțiuni"
     },
     "hero": {
-      "title": "Programează dispozitivul tău Bitaxe direct de pe Internet",
+      "title": "Programează dispozitivul tău Jade-Diy direct de pe Internet",
       "description": "Conectează dispozitivul, selectează modelul și versiunea plăcii și pornește programarea imediat. Nu este necesară instalare.",
       "getStarted": "Pornește",
       "connect": "Conectează",
@@ -31,7 +31,7 @@
       "title": "Funcții importante",
       "fastFlashing": {
         "title": "Programare rapidă",
-        "description": "Încarcă software pe Bitaxe în secunde, nu minute."
+        "description": "Încarcă software pe Jade-Diy în secunde, nu minute."
       },
       "webBased": {
         "title": "Bazat pe web",
@@ -39,13 +39,13 @@
       },
       "multipleBoards": {
         "title": "Plăci multiple",
-        "description": "Suport pentru mai multe plăci și module Bitaxe."
+        "description": "Suport pentru mai multe plăci și module Jade-Diy."
       }
     },
     "instructions": {
       "title": "Instrucțiuni",
       "steps": {
-        "1": "Conectează Bitaxe-ul tău la calculator.",
+        "1": "Conectează Jade-Diy-ul tău la calculator.",
         "2": "Apasă pe \"Conectare Dispozitiv\" și selectează dispozitivul tău din popup.",
         "3": "Selectează modelul dispozitivului tău din meniul dropdown.",
         "4": "Alege versiunea potrivită a plăcii.",

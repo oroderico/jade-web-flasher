@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   ...(process.env.NODE_ENV === 'production' ? {
-    basePath: '/bitaxe-web-flasher',
-    assetPrefix: '/bitaxe-web-flasher',
+    basePath: '/jade-diy-web-installer',
+    assetPrefix: '/jade-diy-web-installer',
   } : {}),
   images: {
     unoptimized: true,

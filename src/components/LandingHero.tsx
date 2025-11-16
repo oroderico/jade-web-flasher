@@ -195,7 +195,7 @@ export default function LandingHero() {
     const a = document.createElement('a');
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     a.href = url;
-    a.download = `bitaxe-logs-${timestamp}.txt`;
+    a.download = `jade-diy-logs-${timestamp}.txt`;
     document.body.appendChild(a);
     a.click();
     window.URL.revokeObjectURL(url);
@@ -266,7 +266,7 @@ export default function LandingHero() {
 
       setStatus(t('status.flashing', { percent: 0 }))
 
-      // On all Bitaxe derivatives the same
+      // On all Jade-Diy derivatives the same
       const nvsStart = 0x9000;
       const nvsSize = 0x6000;
 

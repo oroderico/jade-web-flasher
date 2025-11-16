@@ -11,8 +11,8 @@
       "instructions": "Instruções"
     },
     "hero": {
-      "title": "Grave Seu Bitaxe Diretamente da Web",
-      "description": "Conecte seu dispositivo, selecione seu modelo e versão da placa, e inicie a gravação imediatamente. Nenhuma configuração necessária.",
+      "title": "Grave Seu Jade-Diy Diretamente da Web",
+      "description": "Conecte seu Jade-Diy, selecione seu modelo e versão da placa, e inicie a gravação imediatamente. Nenhuma configuração necessária.",
       "getStarted": "Começar",
       "connect": "Conectar",
       "disconnect": "Desconectar",
@@ -31,7 +31,7 @@
       "title": "Principais Recursos",
       "fastFlashing": {
         "title": "Gravação Rápida",
-        "description": "Grave seu Bitaxe em segundos, não minutos."
+        "description": "Grave seu Jade-Diy em segundos, não minutos."
       },
       "webBased": {
         "title": "Baseado na Web",
@@ -39,13 +39,13 @@
       },
       "multipleBoards": {
         "title": "Múltiplas Placas",
-        "description": "Suporte para várias placas e módulos Bitaxe."
+        "description": "Suporte para várias placas e módulos Jade-Diy."
       }
     },
     "instructions": {
       "title": "Como Usar",
       "steps": {
-        "1": "Conecte seu Bitaxe ao computador.",
+        "1": "Conecte seu Jade-Diy ao computador.",
         "2": "Clique em \"Conectar Dispositivo\" e selecione seu dispositivo na janela pop-up.",
         "3": "Selecione o modelo do dispositivo no menu suspenso.",
         "4": "Escolha a versão apropriada da placa.",

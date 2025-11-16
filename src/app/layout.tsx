@@ -6,11 +6,11 @@ import { I18nProvider } from '../components/I18nProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const basePath = process.env.NODE_ENV === 'production' ? '/bitaxe-web-flasher' : ''
+const basePath = process.env.NODE_ENV === 'production' ? '/jade-diy-web-installer' : ''
 
 export const metadata: Metadata = {
-  title: 'Jade-Diy Web Flasher',
-  description: 'Flash your Jade-Diy directly from the web',
+  title: 'Jade-Diy Web Installer',
+  description: 'Install your Jade-Diy directly from the web',
   icons: {
     icon: [
       {

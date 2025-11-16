@@ -11,8 +11,8 @@
       "instructions": "Anleitung"
     },
     "hero": {
-      "title": "Direkt aus dem Browser dein Bitaxe flashen",
-      "description": "Verbinde deinen Bitaxe, wählen dein Modell und die Board-Version aus und beginne sofort mit dem Flashen. Keine Installation erforderlich.",
+      "title": "Direkt aus dem Browser dein Jade-Diy flashen",
+      "description": "Verbinde deinen Jade-Diy, wählen dein Modell und die Board-Version aus und beginne sofort mit dem Flashen. Keine Installation erforderlich.",
       "getStarted": "Anleitung",
       "connect": "Verbinden",
       "disconnect": "Trennen",
@@ -31,7 +31,7 @@
       "title": "Funktionen",
       "fastFlashing": {
         "title": "Schnelles Flashen",
-        "description": "Flashe deinen Bitaxe in Sekunden, nicht in Minuten."
+        "description": "Flashe deinen Jade-Diy in Sekunden, nicht in Minuten."
       },
       "webBased": {
         "title": "Webbasiert",
@@ -39,13 +39,13 @@
       },
       "multipleBoards": {
         "title": "Mehrere Boards",
-        "description": "Unterstützung für verschiedene Bitaxe Boards und Module."
+        "description": "Unterstützung für verschiedene Jade-Diy Boards und Module."
       }
     },
     "instructions": {
       "title": "Anleitung",
       "steps": {
-        "1": "Verbinde dein Bitaxe mit dem Computer.",
+        "1": "Verbinde dein Jade-Diy mit dem Computer.",
         "2": "Klicke auf \"Verbinden\" und wähle dein Gerät aus dem Popup.",
         "3": "Wähle dein Gerätemodell aus dem Dropdown-Menü.",
         "4": "Wähle die entsprechende Board-Version.",

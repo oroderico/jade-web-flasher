@@ -31,7 +31,7 @@
       "title": "Key Features",
       "fastFlashing": {
         "title": "Fast Flashing",
-        "description": "Flash your Bitaxe in seconds, not minutes."
+        "description": "Flash your Jade-Diy in seconds, not minutes."
       },
       "webBased": {
         "title": "Web-Based",
@@ -39,13 +39,13 @@
       },
       "multipleBoards": {
         "title": "Multiple Boards",
-        "description": "Support for various Bitaxe boards and modules."
+        "description": "Support for various Jade-Diy boards and modules."
       }
     },
     "instructions": {
       "title": "How to Use",
       "steps": {
-        "1": "Connect your Bitaxe to your computer.",
+        "1": "Connect your Jade-Diy to your computer.",
         "2": "Click \"Connect Device\" and select your device from the popup.",
         "3": "Select your device model from the dropdown.",
         "4": "Choose the appropriate board version.",

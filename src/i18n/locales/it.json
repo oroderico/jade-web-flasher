@@ -11,7 +11,7 @@
         "instructions": "Istruzioni"
     },
     "hero": {
-        "title": "Flasha il tuo Bitaxe direttamente dal Web",
+        "title": "Flasha il tuo Jade-Diy direttamente dal Web",
         "description": "Collega il tuo dispositivo, seleziona il modello e la versione della scheda e inizia subito il flashing. Nessuna configurazione richiesta.",
         "getStarted": "Inizia",
         "connect": "Connetti",
@@ -31,7 +31,7 @@
         "title": "Caratteristiche principali",
         "fastFlashing": {
             "title": "Flash rapido",
-            "description": "Flasha il tuo Bitaxe in pochi secondi, non minuti."
+            "description": "Flasha il tuo Jade-Diy in pochi secondi, non minuti."
         },
         "webBased": {
             "title": "Basato sul Web",
@@ -39,13 +39,13 @@
         },
         "multipleBoards": {
             "title": "Schede multiple",
-            "description": "Supporto per varie schede e moduli Bitaxe."
+            "description": "Supporto per varie schede e moduli Jade-Diy."
         }
     },
     "instructions": {
         "title": "Come utilizzare",
         "steps": {
-            "1": "Collega il tuo Bitaxe al computer.",
+            "1": "Collega il tuo Jade-Diy al computer.",
             "2": "Clicca su \"Connetti dispositivo\" e seleziona il tuo dispositivo dal popup.",
             "3": "Seleziona il modello del dispositivo dal menu a discesa.",
             "4": "Scegli la versione appropriata della scheda.",

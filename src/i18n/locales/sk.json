@@ -11,7 +11,7 @@
       "instructions": "Inštrukcie"
     },
     "hero": {
-      "title": "Aktualizujte Váš Bitaxe Priamo cez Web",
+      "title": "Aktualizujte Váš Jade-Diy Priamo cez Web",
       "description": "Pripojte Vaše zariadenie, vyberte model, verziu dosky, a spustite aktualizáciou. Bez potreby konfigurácie.",
       "getStarted": "Začíname",
       "connect": "Pripojiť",
@@ -31,7 +31,7 @@
       "title": "Kľučové Funkcie",
       "fastFlashing": {
         "title": "Rýchla Aktualizácia",
-        "description": "Aktualizujte Váš Bitaxe behom niekoľkých sekúd, nie minút."
+        "description": "Aktualizujte Váš Jade-Diy behom niekoľkých sekúd, nie minút."
       },
       "webBased": {
         "title": "Webový",
@@ -39,13 +39,13 @@
       },
       "multipleBoards": {
         "title": "Viaceré dosky",
-        "description": "Podporuje viaceré dosky a moduly Bitaxe."
+        "description": "Podporuje viaceré dosky a moduly Jade-Diy."
       }
     },
     "instructions": {
       "title": "Návod na použitie",
       "steps": {
-        "1": "Pripojte Vás Bitaxe k počítaču.",
+        "1": "Pripojte Vás Jade-Diy k počítaču.",
         "2": "Kliknite na  \"Pripojiť zariadenie\" a vyberte Vaše zariadenie zo zoznamu.",
         "3": "Vyberte model Vášho zariadenia z možností.",
         "4": "Vyberte vhodnu verziu dosky.",
