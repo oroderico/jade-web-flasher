@@ -1,20 +1,20 @@
 {
   "devices": [
     {
-      "name": "Jade DIY Waveshare S3 (No Log)",
+      "name": "Jade DIY Waveshare S3",
       "boards": [
         {
-          "name": "Standard",
+          "name": "No Log",
           "supported_firmware": [
             {
-              "version": "fw37ba786254c72fb86ba4c0bc623fbc8428452be3",
-              "path": "firmware/Waveshare S3_NO_LOG/jade.bin",
+              "version": "1.0.36-132-g3212faea",
+              "path": "firmware/Waveshare S3_NO_LOG/1.0.36-132-g3212faea/jade.bin",
               "baudRate": 921600,
               "files": [
                 {
                   "label": "Bootloader",
                   "address": "0x0",
-                  "path": "firmware/Waveshare S3_NO_LOG/bootloader.bin"
+                  "path": "firmware/Waveshare S3_NO_LOG/1.0.36-132-g3212faea/bootloader.bin"
                 },
                 {
                   "label": "Partition Table",
@@ -24,12 +24,12 @@
                 {
                   "label": "OTA Data",
                   "address": "0x1A000",
-                  "path": "firmware/Waveshare S3_NO_LOG/ota_data_initial.bin"
+                  "path": "firmware/Waveshare S3_NO_LOG/1.0.36-132-g3212faea/ota_data_initial.bin"
                 },
                 {
                   "label": "Application",
                   "address": "0x20000",
-                  "path": "firmware/Waveshare S3_NO_LOG/jade.bin"
+                  "path": "firmware/Waveshare S3_NO_LOG/1.0.36-132-g3212faea/jade.bin"
                 }
               ]
             }
