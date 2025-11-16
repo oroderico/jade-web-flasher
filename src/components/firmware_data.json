@@ -1,78 +1,41 @@
 {
-    "devices": [
+  "devices": [
+    {
+      "name": "Jade DIY Waveshare S3 (No Log)",
+      "boards": [
         {
-            "name": "ttgo-t display",
-            "boards": [
+          "name": "Standard",
+          "supported_firmware": [
+            {
+              "version": "fw37ba786254c72fb86ba4c0bc623fbc8428452be3",
+              "path": "firmware/Waveshare S3_NO_LOG/jade.bin",
+              "baudRate": 921600,
+              "files": [
                 {
-                    "name": "v1",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-102-v2.10.0.bin"
-                        },
-                        {
-                            "version": "2.9.0",
-                            "path": "firmware/esp-miner-factory-102-v2.9.0.bin"
-                        },
-                        {
-                            "version": "2.8.0",
-                            "path": "firmware/esp-miner-factory-102-v2.8.0.bin"
-                        }
-                    ]
-                }
-            ]
-        },
-
-
-
-
-        {
-            "name": "ttgo-t display S3",
-            "boards": [
+                  "label": "Bootloader",
+                  "address": "0x0",
+                  "path": "firmware/Waveshare S3_NO_LOG/bootloader.bin"
+                },
                 {
-                    "name": "v1",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-201-v2.10.0.bin"
-                        }
-                    ]
-                }
-            ]
-        },
-
-
-
-        {
-            "name": "waveshare s3",
-            "boards": [
+                  "label": "Partition Table",
+                  "address": "0x8000",
+                  "path": "firmware/Waveshare S3_NO_LOG/partition-table.bin"
+                },
                 {
-                    "name": "v1",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/Waveshare S3_NO_LOG/jade.bin"
-                        }
-                    ]
-                }
-            ]
-        },
-
-
-
-        {
-            "name": "m5stack c2 plus",
-            "boards": [
+                  "label": "OTA Data",
+                  "address": "0x1A000",
+                  "path": "firmware/Waveshare S3_NO_LOG/ota_data_initial.bin"
+                },
                 {
-                    "name": "v1",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-601-v2.10.0.bin"
-                        }
-                    ]
+                  "label": "Application",
+                  "address": "0x20000",
+                  "path": "firmware/Waveshare S3_NO_LOG/jade.bin"
                 }
-            ]
+              ]
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

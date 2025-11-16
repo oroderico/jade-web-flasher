@@ -13,6 +13,49 @@ import device_data from './firmware_data.json'
 import { Terminal } from '@xterm/xterm';
 import '@xterm/xterm/css/xterm.css';
 
+type FirmwareFileDescriptor = {
+  label?: string;
+  path: string;
+  address: string | number;
+};
+
+type FirmwareOption = {
+  version: string;
+  path: string;
+  files?: FirmwareFileDescriptor[];
+  baudRate?: number;
+};
+
+type BoardOption = {
+  name: string;
+  supported_firmware: FirmwareOption[];
+  baudRate?: number;
+};
+
+type DeviceOption = {
+  name: string;
+  boards: BoardOption[];
+};
+
+const bufferToBinaryString = (buffer: ArrayBuffer) => {
+  const bytes = new Uint8Array(buffer);
+  const chunkSize = 0x8000;
+  let binary = '';
+
+  for (let i = 0; i < bytes.length; i += chunkSize) {
+    const chunk = bytes.subarray(i, Math.min(i + chunkSize, bytes.length));
+    binary += String.fromCharCode(...chunk);
+  }
+
+  return binary;
+};
+
+const parseAddress = (address: string | number) =>
+  typeof address === 'number' ? address : parseInt(address, 16);
+
+const getFileLabel = (file: FirmwareFileDescriptor, index: number) =>
+  file.label ?? file.path.split('/').pop() ?? `Part ${index + 1}`;
+
 export default function LandingHero() {
   const { t } = useTranslation();
   const [selectedDevice, setSelectedDevice] = useState<string>('')
@@ -33,6 +76,24 @@ export default function LandingHero() {
   const readableStreamClosedRef = useRef<Promise<void> | null>(null)
   const logsRef = useRef<string>('')
   const [keepConfig, setKeepConfig] = useState(false);
+  const [fileProgress, setFileProgress] = useState<Record<string, number>>({});
+
+  const devices: DeviceOption[] = (device_data as { devices: DeviceOption[] }).devices;
+
+  const device = selectedDevice !== ''
+    ? devices.find(d => d.name === selectedDevice)
+    : undefined;
+  const board = selectedBoardVersion !== ''
+    ? device?.boards.find(b => b.name === selectedBoardVersion)
+    : undefined;
+  const firmware = selectedFirmware !== ''
+    ? board?.supported_firmware.find(f => f.version == selectedFirmware)
+    : undefined;
+  const hasMultiFileFirmware = Boolean(firmware?.files?.length);
+
+  useEffect(() => {
+    setFileProgress({});
+  }, [selectedDevice, selectedBoardVersion, selectedFirmware]);
 
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
@@ -63,17 +124,6 @@ export default function LandingHero() {
       }
     };
   }, [isLogging, t]);
-
-  const devices = device_data.devices;
-  const device = selectedDevice !== ''
-    ? devices.find(d => d.name == selectedDevice)!
-    : { boards: [] };
-  const board = selectedBoardVersion !== ''
-    ? device.boards.find(b => b.name == selectedBoardVersion)!
-    : { supported_firmware: [] };
-  const firmware = selectedFirmware !== ''
-    ? board.supported_firmware.find(f => f.version == selectedFirmware)!
-    : { path: '' };
 
   const handleConnect = async () => {
     setIsConnecting(true)
@@ -232,68 +282,87 @@ export default function LandingHero() {
         await serialPortRef.current.close();
       }
 
+      if (!firmware) {
+        throw new Error('No firmware available for the selected device and board version')
+      }
+
       // Create transport and ESPLoader for flashing
       const transport = new Transport(serialPortRef.current);
       const loader = new ESPLoader({
         transport,
-        baudrate: 115200,
+        baudrate: firmware.baudRate ?? board?.baudRate ?? 115200,
         romBaudrate: 115200,
         terminal: {
           clean() { },
-          writeLine(data: string) {
-            // setStatus(data);
-          },
-          write(data: string) {
-            // setStatus(data);
-          },
+          writeLine() { },
+          write() { },
         },
       });
 
       await loader.main();
 
-      if (!firmware) {
-        throw new Error('No firmware available for the selected device and board version')
-      }
+      const firmwareFiles = firmware.files ?? [];
+      const isMultiPartFirmware = firmwareFiles.length > 0;
+      const fileLabels: string[] = [];
+      let fileArray: { data: string; address: number }[] = [];
 
-      const firmwareResponse = await fetch(firmware.path)
-      if (!firmwareResponse.ok) {
-        throw new Error('Failed to load firmware file')
-      }
+      if (isMultiPartFirmware) {
+        const initialProgress: Record<string, number> = {};
+        for (const [index, fileDescriptor] of firmwareFiles.entries()) {
+          const label = getFileLabel(fileDescriptor, index);
+          fileLabels.push(label);
+          initialProgress[label] = 0;
+          const response = await fetch(fileDescriptor.path);
+          if (!response.ok) {
+            throw new Error(`Failed to load ${fileDescriptor.path}`);
+          }
+          const binaryString = bufferToBinaryString(await response.arrayBuffer());
+          fileArray.push({
+            data: binaryString,
+            address: parseAddress(fileDescriptor.address),
+          });
+        }
+        setFileProgress(initialProgress);
+      } else {
+        const firmwareResponse = await fetch(firmware.path);
+        if (!firmwareResponse.ok) {
+          throw new Error('Failed to load firmware file');
+        }
 
-      const firmwareArrayBuffer = await firmwareResponse.arrayBuffer()
-      const firmwareUint8Array = new Uint8Array(firmwareArrayBuffer)
-      const firmwareBinaryString = Array.from(firmwareUint8Array, (byte) => String.fromCharCode(byte)).join('')
+        const firmwareBinaryString = bufferToBinaryString(await firmwareResponse.arrayBuffer());
+
+        // On all Jade-Diy derivatives the same
+        const nvsStart = 0x9000;
+        const nvsSize = 0x6000;
+
+        if (keepConfig) {
+          fileArray = [
+            {
+              data: firmwareBinaryString.slice(0, nvsStart),
+              address: 0,
+            },
+            {
+              data: firmwareBinaryString.slice(nvsStart + nvsSize),
+              address: nvsStart + nvsSize,
+            },
+          ];
+        } else {
+          fileArray = [
+            {
+              data: firmwareBinaryString,
+              address: 0,
+            },
+          ];
+        }
+        const label = 'Firmware Image';
+        fileLabels.push(label);
+        setFileProgress({ [label]: 0 });
+      }
 
       setStatus(t('status.flashing', { percent: 0 }))
 
-      // On all Jade-Diy derivatives the same
-      const nvsStart = 0x9000;
-      const nvsSize = 0x6000;
-
-      let parts;
-
-      if (keepConfig) {
-        parts = [
-          {
-            data: firmwareBinaryString.slice(0, nvsStart), // Data before NVS
-            address: 0,
-          },
-          {
-            data: firmwareBinaryString.slice(nvsStart + nvsSize), // Data after NVS
-            address: nvsStart + nvsSize,
-          },
-        ];
-      } else {
-        parts = [
-          {
-            data: firmwareBinaryString, // Entire firmware binary
-            address: 0,
-          },
-        ];
-      }
-
       await loader.writeFlash({
-        fileArray: parts,
+        fileArray,
         flashSize: "keep",
         flashMode: "keep",
         flashFreq: "keep",
@@ -301,16 +370,28 @@ export default function LandingHero() {
         compress: true,
         reportProgress: (fileIndex, written, total) => {
           const percent = Math.round((written / total) * 100)
-          if (percent == 100) {
+          const label = fileLabels[fileIndex] ?? t('hero.startFlashing')
+          setFileProgress(prev => ({
+            ...prev,
+            [label]: percent,
+          }))
+          if (percent === 100 && fileIndex === fileLabels.length - 1) {
             setStatus(t('status.completed'))
           } else {
-            setStatus(t('status.flashing', { percent: percent }))
+            setStatus(`${label}: ${t('status.flashing', { percent })}`)
           }
         },
         calculateMD5Hash: () => '',
       })
 
       setStatus(t('status.completed'))
+      setFileProgress(prev => {
+        const updated: Record<string, number> = {}
+        Object.keys(prev).forEach((label) => {
+          updated[label] = 100
+        })
+        return Object.keys(updated).length ? updated : prev
+      })
       await loader.hardReset()
 
       setStatus(t('status.success'))
@@ -371,7 +452,7 @@ export default function LandingHero() {
               {selectedDevice && (
                 <Selector
                   placeholder={t('hero.selectBoard')}
-                  values={device.boards.map(b => b.name)}
+                  values={device?.boards.map(b => b.name) ?? []}
                   onValueChange={(value) => {
                     setSelectedBoardVersion(value)
                     setSelectedFirmware('')
@@ -382,23 +463,25 @@ export default function LandingHero() {
               {selectedBoardVersion && (
                 <Selector
                   placeholder={t('hero.selectFirmware')}
-                  values={board.supported_firmware.map(f => f.version)}
+                  values={board?.supported_firmware.map(f => f.version) ?? []}
                   onValueChange={setSelectedFirmware}
                   disabled={isConnecting || isFlashing}
                 />
               )}
-              <div className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  id="keepConfig"
-                  className="cursor-pointer"
-                  checked={keepConfig}
-                  onChange={handleKeepConfigToggle}
-                />
-                <label htmlFor="keepConfig" className="text-gray-500 dark:text-gray-400 cursor-pointer">
-                  {t('hero.keepConfig')}
-                </label>
-              </div>
+              {!hasMultiFileFirmware && (
+                <div className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    id="keepConfig"
+                    className="cursor-pointer"
+                    checked={keepConfig}
+                    onChange={handleKeepConfigToggle}
+                  />
+                  <label htmlFor="keepConfig" className="text-gray-500 dark:text-gray-400 cursor-pointer">
+                    {t('hero.keepConfig')}
+                  </label>
+                </div>
+              )}
               <Button
                 className="w-full"
                 onClick={handleStartFlashing}
@@ -407,6 +490,24 @@ export default function LandingHero() {
                 {isFlashing ? t('hero.flashing') : t('hero.startFlashing')}
                 <Zap className="ml-2 h-4 w-4" />
               </Button>
+              {Object.keys(fileProgress).length > 0 && (
+                <div className="w-full space-y-2 pt-2">
+                  {Object.entries(fileProgress).map(([label, value]) => (
+                    <div key={label} className="text-left">
+                      <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
+                        <span>{label}</span>
+                        <span>{Math.round(value)}%</span>
+                      </div>
+                      <div className="h-2 rounded bg-gray-200 dark:bg-gray-800 overflow-hidden">
+                        <div
+                          className="h-full bg-emerald-500 transition-[width] duration-150"
+                          style={{ width: `${value}%` }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
               <div className="flex gap-2">
                 <Button
                   className="flex-1"
