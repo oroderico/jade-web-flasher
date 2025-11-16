@@ -25,6 +25,8 @@
       "stopLogging": "Loglamayı Durdur",
       "downloadLogs": "Logu İndir",
       "loggingDescription": "Cihazınızı seçin, işlemi loglayın ve daha sonra indirin.",
+
+      "loggingDisclaimer": "Bu sitedeki tüm üretici yazılımları Sandmann tarafından kişisel olarak derlenmiştir. Ben Sandmann, sistemin kötüye kullanımı veya güvenlik açıklarından sorumlu değilim. Bu sitenin amacı, Jade DIY'in eski sürümlerini eğitim amaçlı olarak karşılaştırmak ve hataları keşfetmek için kolayca yüklemenizi sağlamaktır. Gerçek kullanım için Jade yazılımını kendiniz derleyip manuel olarak kurmanızı tavsiye ederim.",
       "keepConfig": "Yapılandırmayı koru"
     },
     "features": {
@@ -74,3 +76,4 @@
       }
     }
   }
+

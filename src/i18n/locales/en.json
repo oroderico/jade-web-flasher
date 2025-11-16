@@ -25,6 +25,7 @@
       "stopLogging": "Stop Logging",
       "downloadLogs": "Download Logs",
       "loggingDescription": "Connect your device, log the serial data and download it later on.",
+      "loggingDisclaimer": "All firmware hosted on this site was personally compiled by Sandmann. I, Sandmann, do not assume responsibility for any misuse of the system or security failures. The purpose of this site is to let you easily install older Jade DIY versions for educational comparison and bug discovery. For real-world use I recommend compiling the Jade software yourself and installing it manually.",
       "keepConfig": "Keep configuration"
     },
     "features": {

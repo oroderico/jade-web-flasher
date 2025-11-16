@@ -25,6 +25,8 @@
         "stopLogging": "De' ghoSchoH",
         "downloadLogs": "De' nIH",
         "loggingDescription": "chel jan, ghItlh De', nIH 'ach neH le'vaD.",
+
+        "loggingDisclaimer": "All firmware hosted on this site was personally compiled by Sandmann. I, Sandmann, make no guarantees regarding misuse of the system or security issues. This site exists so you can install older Jade DIY versions for comparison, education, and bug hunting. For real missions you should compile Jade yourself and install it manually.",
         "keepConfig": "nugh rI' choq"
     },
     "features": {
@@ -74,3 +76,4 @@
         }
     }
 }
+

@@ -25,6 +25,7 @@
       "stopLogging": "Logging stoppen",
       "downloadLogs": "Logs herunterladen",
       "loggingDescription": "Verbinde dein Gerät, protokolliere die seriellen Daten und lade diese später herunter.",
+      "loggingDisclaimer": "Alle auf dieser Website bereitgestellten Firmwares wurden persönlich von Sandmann kompiliert. Ich, Sandmann, übernehme keine Verantwortung für eine missbräuchliche Nutzung des Systems oder für Sicherheitslücken. Ziel dieser Seite ist es, dir zu ermöglichen, ältere Jade DIY Versionen einfach zu installieren, um sie zu Vergleichs-, Analyse- und Lernzwecken sowie zur Fehlersuche zu nutzen. Für den produktiven Einsatz empfehle ich dir, die Jade-Software selbst zu kompilieren und manuell zu installieren.",
       "keepConfig": "Konfiguration behalten"
     },
     "features": {

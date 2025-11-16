@@ -25,6 +25,8 @@
       "stopLogging": "Oprește logarea",
       "downloadLogs": "Descarcă loguri",
       "loggingDescription": "Conectează aparatul, înregistrează datele de pe comunicarea serială și descarcă mai târziu.",
+
+      "loggingDisclaimer": "Toate firmware-urile de pe acest site au fost compilate personal de Sandmann. Eu, Sandmann, nu îmi asum responsabilitatea pentru utilizarea necorespunzătoare a sistemului sau pentru vulnerabilități de securitate. Scopul acestui site este să îți permită să instalezi ușor versiuni vechi ale Jade DIY pentru comparații, analiză educațională și descoperirea bug-urilor. Pentru utilizare reală îți recomand să îți compilezi singur software-ul Jade și să îl instalezi manual.",
       "keepConfig": "Păstrează configurația"
     },
     "features": {
@@ -74,3 +76,4 @@
       }
     }
   }
+

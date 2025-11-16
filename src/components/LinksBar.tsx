@@ -5,23 +5,18 @@ import { ExternalLink } from 'lucide-react'
 export default function LinksBar() {
   const purchaseLinks = [
     {
-      region: "United States",
-      url: "https://dub.sh/lIWhNgZ",
-      retailer: "US Retailer"
+      region: "Brasil",
+      url: "https://store.bitcoinfacil.net/produtos.html?cupom=sandmann",
+      retailer: "BR Retailer"
     },
     {
       region: "Europe",
-      url: "https://dub.sh/tmPs27j", 
+      url: "https://www.sandlabs.store", 
       retailer: "EU Retailer"
     },
     {
-      region: "United Kingdom",
-      url: "https://dub.sh/5EXOLfW",
-      retailer: "UK Retailer"
-    },
-    {
       region: "Global",
-      url: "https://dub.sh/HoGhuGr",
+      url: "https://www.sandlabs.store", 
       retailer: "Global Store"
     }
   ]

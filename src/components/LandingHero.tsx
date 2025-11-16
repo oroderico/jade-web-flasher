@@ -529,6 +529,9 @@ export default function LandingHero() {
               <p className="mx-auto max-w-[400px] text-gray-500 md:text-m dark:text-gray-400">
                 {t('hero.loggingDescription')}
               </p>
+              <p className="mx-auto mt-2 max-w-[400px] text-xs text-gray-400 dark:text-gray-500">
+                {t('hero.loggingDisclaimer')}
+              </p>
               {status && <p className="mt-2 text-sm font-medium">{status}</p>}
             </div>
             {isLogging && (

@@ -25,6 +25,8 @@
       "stopLogging": "Ukončiť Logovanie",
       "downloadLogs": "Stiahniť Logy",
       "loggingDescription": "Pripojte Vaše zariadenie, uložte serialové dáta a stiahnite ich neskôr.",
+
+      "loggingDisclaimer": "Všetky firmvéry na tejto stránke boli osobne skompilované Sandmannom. Ja, Sandmann, nenesiem zodpovednosť za zneužitie systému alebo bezpečnostné zlyhania. Cieľom tejto stránky je umožniť vám jednoducho nainštalovať staršie verzie Jade DIY na porovnanie a analýzu na didaktické účely a hľadanie chýb. Na reálne použitie odporúčam softvér Jade preložiť a nainštalovať si ho manuálne.",
       "keepConfig": "Zachovať konfiguráciu"
     },
     "features": {
@@ -74,3 +76,4 @@
       }
     }
   }
+
