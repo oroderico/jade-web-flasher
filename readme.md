@@ -1,8 +1,8 @@
 [![](https://dcbadge.vercel.app/api/server/3E8ca2dkcC)](https://discord.gg/3E8ca2dkcC)
 
-# Bitaxe Web Flasher
+# Jade-Diy Web Flasher
 
-The Bitaxe Web Flasher is the open source tool that provides you an easy solution to flash a factory file to your device.
+The Jade-Diy Web Flasher is the open source tool that provides you an easy solution to flash a factory file to your device.
 
 ## Flashing process
 
