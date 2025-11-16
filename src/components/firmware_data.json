@@ -4,7 +4,7 @@
             "name": "ttgo-t display",
             "boards": [
                 {
-                    "name": "102",
+                    "name": "v1",
                     "supported_firmware": [
                         {
                             "version": "2.10.0",
@@ -22,246 +22,53 @@
                 }
             ]
         },
+
+
+
+
         {
             "name": "ttgo-t display S3",
             "boards": [
                 {
-                    "name": "201",
+                    "name": "v1",
                     "supported_firmware": [
                         {
                             "version": "2.10.0",
                             "path": "firmware/esp-miner-factory-201-v2.10.0.bin"
-                        },
-                        {
-                            "version": "2.9.0",
-                            "path": "firmware/esp-miner-factory-201-v2.9.0.bin"
-                        },
-                        {
-                            "version": "2.8.0",
-                            "path": "firmware/esp-miner-factory-201-v2.8.0.bin"
-                        }
-                    ]
-                },
-                {
-                    "name": "waveshare s3",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-202-v2.10.0.bin"
-                        },
-                        {
-                            "version": "2.9.0",
-                            "path": "firmware/esp-miner-factory-202-v2.9.0.bin"
-                        },
-                        {
-                            "version": "2.8.0",
-                            "path": "firmware/esp-miner-factory-202-v2.8.0.bin"
-                        }
-                    ]
-                },
-                {
-                    "name": "m5stack c2 plus",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-203-v2.10.0.bin"
-                        },
-                        {
-                            "version": "2.9.0",
-                            "path": "firmware/esp-miner-factory-203-v2.9.0.bin"
-                        },
-                        {
-                            "version": "2.8.0",
-                            "path": "firmware/esp-miner-factory-203-v2.8.0.bin"
-                        }
-                    ]
-                },
-                {
-                    "name": "204",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-204-v2.10.0.bin"
-                        },
-                        {
-                            "version": "2.9.0",
-                            "path": "firmware/esp-miner-factory-204-v2.9.0.bin"
-                        },
-                        {
-                            "version": "2.8.0",
-                            "path": "firmware/esp-miner-factory-204-v2.8.0.bin"
-                        }
-                    ]
-                },
-                {
-                    "name": "205",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-205-v2.10.0.bin"
-                        },
-                        {
-                            "version": "2.9.0",
-                            "path": "firmware/esp-miner-factory-205-v2.9.0.bin"
-                        },
-                        {
-                            "version": "2.8.0",
-                            "path": "firmware/esp-miner-factory-205-v2.8.0.bin"
-                        }
-                    ]
-                },
-                {
-                    "name": "207",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-207-v2.10.0.bin"
                         }
                     ]
                 }
             ]
         },
+
+
+
         {
-            "name": "Supra",
+            "name": "waveshare s3",
             "boards": [
                 {
-                    "name": "401",
+                    "name": "v1",
                     "supported_firmware": [
                         {
                             "version": "2.10.0",
                             "path": "firmware/esp-miner-factory-401-v2.10.0.bin"
-                        },
-                        {
-                            "version": "2.9.0",
-                            "path": "firmware/esp-miner-factory-401-v2.9.0.bin"
-                        },
-                        {
-                            "version": "2.8.0",
-                            "path": "firmware/esp-miner-factory-401-v2.8.0.bin"
-                        }
-                    ]
-                },
-                {
-                    "name": "402",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-402-v2.10.0.bin"
-                        },
-                        {
-                            "version": "2.9.0",
-                            "path": "firmware/esp-miner-factory-402-v2.9.0.bin"
-                        },
-                        {
-                            "version": "2.8.0",
-                            "path": "firmware/esp-miner-factory-402-v2.8.0.bin"
-                        }
-                    ]
-                },
-                {
-                    "name": "403",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-403-v2.10.0.bin"
-                        },
-                        {
-                            "version": "2.9.0",
-                            "path": "firmware/esp-miner-factory-403-v2.9.0.bin"
-                        },
-                        {
-                            "version": "2.8.0",
-                            "path": "firmware/esp-miner-factory-403-v2.8.0.bin"
                         }
                     ]
                 }
             ]
         },
+
+
+
         {
-            "name": "Gamma",
+            "name": "m5stack c2 plus",
             "boards": [
                 {
-                    "name": "601",
+                    "name": "v1",
                     "supported_firmware": [
                         {
                             "version": "2.10.0",
                             "path": "firmware/esp-miner-factory-601-v2.10.0.bin"
-                        },
-                        {
-                            "version": "2.9.0",
-                            "path": "firmware/esp-miner-factory-601-v2.9.0.bin"
-                        },
-                        {
-                            "version": "2.8.0",
-                            "path": "firmware/esp-miner-factory-601-v2.8.0.bin"
-                        }
-                    ]
-                },
-                {
-                    "name": "602",
-                    "supported_firmware": [
-                        {
-                            "version": "2.10.0",
-                            "path": "firmware/esp-miner-factory-602-v2.10.0.bin"
-                        },
-                        {
-                            "version": "2.9.0",
-                            "path": "firmware/esp-miner-factory-602-v2.9.0.bin"
-                        },
-                        {
-                            "version": "2.8.0",
-                            "path": "firmware/esp-miner-factory-602-v2.8.0.bin"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "UltraHex",
-            "boards": [
-                {
-                    "name": "302",
-                    "supported_firmware": [
-                        {
-                            "version": "2.1.0",
-                            "path": "firmware/esp-miner-factory-302-v2.1.0.bin"
-                        }
-                    ]
-                },
-                {
-                    "name": "303",
-                    "supported_firmware": [
-                        {
-                            "version": "2.1.0",
-                            "path": "firmware/esp-miner-factory-303-v2.1.0.bin"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "NerdMiner",
-            "boards": [
-                {
-                    "name": "100",
-                    "supported_firmware": [
-                        {
-                            "version": "1.0.0",
-                            "path": "firmware/merged-flash-nerdminer.bin"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "NerdNOS",
-            "boards": [
-                {
-                    "name": "100",
-                    "supported_firmware": [
-                        {
-                            "version": "1.0.4",
-                            "path": "firmware/nerdnos.bin"
                         }
                     ]
                 }
