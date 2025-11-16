@@ -1,7 +1,7 @@
 {
     "devices": [
         {
-            "name": "Max",
+            "name": "ttgo-t display",
             "boards": [
                 {
                     "name": "102",
@@ -23,7 +23,7 @@
             ]
         },
         {
-            "name": "Ultra",
+            "name": "ttgo-t display S3",
             "boards": [
                 {
                     "name": "201",
@@ -43,7 +43,7 @@
                     ]
                 },
                 {
-                    "name": "202",
+                    "name": "waveshare s3",
                     "supported_firmware": [
                         {
                             "version": "2.10.0",
@@ -60,7 +60,7 @@
                     ]
                 },
                 {
-                    "name": "203",
+                    "name": "m5stack c2 plus",
                     "supported_firmware": [
                         {
                             "version": "2.10.0",
