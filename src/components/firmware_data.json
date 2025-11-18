@@ -1,7 +1,7 @@
 {
   "devices": [
     {
-      "name": "Jade DIY Waveshare S3",
+      "name": "Jade DIY Waveshare S3.",
       "boards": [
         {
           "name": "No Log",
