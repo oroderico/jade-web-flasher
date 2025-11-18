@@ -32,6 +32,34 @@
                   "path": "firmware/Waveshare S3_NO_LOG/MOD/1.0.36-132-g3212faea/jade.bin"
                 }
               ]
+            },
+
+            {
+              "version": "1.0.37-1-g3212faea",
+              "path": "firmware/Waveshare S3_NO_LOG/MOD/1.0.37-1-g3212faea/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x0",
+                  "path": "firmware/Waveshare S3_NO_LOG/MOD/1.0.37-1-g3212faea/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x8000",
+                  "path": "firmware/Waveshare S3_NO_LOG/MOD/1.0.37-1-g3212faea/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0x1A000",
+                  "path": "firmware/Waveshare S3_NO_LOG/MOD/1.0.37-1-g3212faea/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x20000",
+                  "path": "firmware/Waveshare S3_NO_LOG/MOD/1.0.37-1-g3212faea/jade.bin"
+                }
+              ]
             }
           ]
         }
