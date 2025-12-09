@@ -88,6 +88,34 @@
                   "path": "firmware/Waveshare S3_NO_LOG/MOD/1.0.38-dirty/jade.bin"
                 }
               ]
+            },
+
+            {
+              "version": "1.0.38-26-gb4852",
+              "path": "firmware/Waveshare S3_NO_LOG/ORIGINAL/1.0.38-26-gb4852/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x0",
+                  "path": "firmware/Waveshare S3_NO_LOG/ORIGINAL/1.0.38-26-gb4852/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x8000",
+                  "path": "firmware/Waveshare S3_NO_LOG/ORIGINAL/1.0.38-26-gb4852/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0x1A000",
+                  "path": "firmware/Waveshare S3_NO_LOG/ORIGINAL/1.0.38-26-gb4852/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x20000",
+                  "path": "firmware/Waveshare S3_NO_LOG/ORIGINAL/1.0.38-26-gb4852/jade.bin"
+                }
+              ]
             }
             
           ]
@@ -407,6 +435,33 @@
                   "path": "firmware/ttgo t display/ORIGINAL/1.0.38-dirty/jade.bin"
                 }
               ]
+            },
+            {
+              "version": "1.0.38-26-gb4852",
+              "path": "firmware/ttgo t display/ORIGINAL/1.0.38-26-gb4852/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.38-26-gb4852/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.38-26-gb4852/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.38-26-gb4852/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.38-26-gb4852/jade.bin"
+                }
+              ]
             } 
 
           ]
@@ -503,6 +558,33 @@
                   "path": "firmware/ttgo t display/NO_LOG/1.0.38-dirty/jade.bin"
                 }
               ]
+            },
+            {
+              "version": "1.0.38-26-gb4852",
+              "path": "firmware/ttgo t display/NO_LOG/1.0.38-26-gb4852/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/NO_LOG/1.0.38-26-gb4852/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/NO_LOG/1.0.38-26-gb4852/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/NO_LOG/1.0.38-26-gb4852/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/NO_LOG/1.0.38-26-gb4852/jade.bin"
+                }
+              ]
             }
 
           ]
@@ -557,6 +639,33 @@
                   "label": "Application",
                   "address": "0x20000",
                   "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-dirty/jade.bin"
+                }
+              ]
+            },
+            {
+              "version": "1.0.38-26-gb4852",
+              "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-26-gb4852/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x0",
+                  "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-26-gb4852/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x8000",
+                  "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-26-gb4852/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0x1A000",
+                  "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-26-gb4852/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x20000",
+                  "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-26-gb4852/jade.bin"
                 }
               ]
             }
@@ -635,6 +744,33 @@
                   "label": "Application",
                   "address": "0x10000",
                   "path": "firmware/m5stickcplus2/NO_LOG/1.0.38-dirty/jade.bin"
+                }
+              ]
+            },
+            {
+              "version": "1.0.38-26-gb4852",
+              "path": "firmware/m5stickcplus2/NO_LOG/1.0.38-26-gb4852/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/m5stickcplus2/NO_LOG/1.0.38-26-gb4852/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/m5stickcplus2/NO_LOG/1.0.38-26-gb4852/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/m5stickcplus2/NO_LOG/1.0.38-26-gb4852/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/m5stickcplus2/NO_LOG/1.0.38-26-gb4852/jade.bin"
                 }
               ]
             }
