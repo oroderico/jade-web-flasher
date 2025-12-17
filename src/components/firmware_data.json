@@ -116,6 +116,33 @@
                   "path": "firmware/Waveshare S3_NO_LOG/ORIGINAL/1.0.38-26-gb4852/jade.bin"
                 }
               ]
+            },
+            {
+              "version": "1.0.38-38-g55b122ce",
+              "path": "firmware/Waveshare S3_NO_LOG/ORIGINAL/1.0.38-38-g55b122ce/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x0",
+                  "path": "firmware/Waveshare S3_NO_LOG/ORIGINAL/1.0.38-38-g55b122ce/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x8000",
+                  "path": "firmware/Waveshare S3_NO_LOG/ORIGINAL/1.0.38-38-g55b122ce/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0x1A000",
+                  "path": "firmware/Waveshare S3_NO_LOG/ORIGINAL/1.0.38-38-g55b122ce/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x20000",
+                  "path": "firmware/Waveshare S3_NO_LOG/ORIGINAL/1.0.38-38-g55b122ce/jade.bin"
+                }
+              ]
             }
             
           ]
@@ -462,6 +489,33 @@
                   "path": "firmware/ttgo t display/ORIGINAL/1.0.38-26-gb4852/jade.bin"
                 }
               ]
+            },
+            {
+              "version": "1.0.38-38-g55b122ce",
+              "path": "firmware/ttgo t display/ORIGINAL/1.0.38-38-g55b122ce/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.38-38-g55b122ce/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.38-38-g55b122ce/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.38-38-g55b122ce/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/ORIGINAL/1.0.38-38-g55b122ce/jade.bin"
+                }
+              ]
             } 
 
           ]
@@ -585,6 +639,33 @@
                   "path": "firmware/ttgo t display/NO_LOG/1.0.38-26-gb4852/jade.bin"
                 }
               ]
+            },
+            {
+              "version": "1.0.38-38-g55b122ce",
+              "path": "firmware/ttgo t display/NO_LOG/1.0.38-38-g55b122ce/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x1000",
+                  "path": "firmware/ttgo t display/NO_LOG/1.0.38-38-g55b122ce/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x9000",
+                  "path": "firmware/ttgo t display/NO_LOG/1.0.38-38-g55b122ce/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0xE000",
+                  "path": "firmware/ttgo t display/NO_LOG/1.0.38-38-g55b122ce/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x10000",
+                  "path": "firmware/ttgo t display/NO_LOG/1.0.38-38-g55b122ce/jade.bin"
+                }
+              ]
             }
 
           ]
@@ -666,6 +747,33 @@
                   "label": "Application",
                   "address": "0x20000",
                   "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-26-gb4852/jade.bin"
+                }
+              ]
+            },
+            {
+              "version": "1.0.38-38-g55b122ce",
+              "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-38-g55b122ce/jade.bin",
+              "baudRate": 921600,
+              "files": [
+                {
+                  "label": "Bootloader",
+                  "address": "0x0",
+                  "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-38-g55b122ce/bootloader.bin"
+                },
+                {
+                  "label": "Partition Table",
+                  "address": "0x8000",
+                  "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-38-g55b122ce/partition-table.bin"
+                },
+                {
+                  "label": "OTA Data",
+                  "address": "0x1A000",
+                  "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-38-g55b122ce/ota_data_initial.bin"
+                },
+                {
+                  "label": "Application",
+                  "address": "0x20000",
+                  "path": "firmware/ttgo t display s3/ORIGINAL/1.0.38-38-g55b122ce/jade.bin"
                 }
               ]
             }
