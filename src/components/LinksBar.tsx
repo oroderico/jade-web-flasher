@@ -15,6 +15,11 @@ export default function LinksBar() {
       retailer: "EU Retailer"
     },
     {
+      region: "AliExpress",
+      url: "https://de.aliexpress.com/w/wholesale-ttgo-t-display.html?spm=a2g0o.buyer-tracking.search.0",
+      retailer: "AliExpress"
+    },
+    {
       region: "Global",
       url: "https://www.sandlabs.store", 
       retailer: "Global Store"
